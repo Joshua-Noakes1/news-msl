@@ -1,0 +1,23 @@
+{
+  "name": "news-msl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joshua-Noakes1/news-msl.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joshua-Noakes1/news-msl/issues"
+  },
+  "homepage": "https://github.com/Joshua-Noakes1/news-msl#readme",
+  "dependencies": {
+    "rss-to-json": "^2.1.1"
+  }
+}
