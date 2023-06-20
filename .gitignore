@@ -77,3 +77,4 @@ typings/
 
 # Package
 package*.json
+.vercel
