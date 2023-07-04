@@ -1,4 +1,5 @@
 const { parse } = require('rss-to-json');
+const { v4: uuidv4 } = require('uuid');
 
 module.exports = async (req, res) => {
     try {
@@ -9,6 +10,7 @@ module.exports = async (req, res) => {
         // loop over each feed and add to news array
         skyNews.items.forEach((item) => {
             news.push({
+                id: uuidv4(),
                 title: item.title,
                 link: item.link.toString().split("?")[0], // remove query string from link eg. UTM tracking
                 description: item.description,
@@ -19,6 +21,7 @@ module.exports = async (req, res) => {
         });
         bbcNews.items.forEach((item) => {
             news.push({
+                id: uuidv4(),
                 title: item.title,
                 link: item.link.toString().split("?")[0], // remove query string from link eg. UTM tracking
                 description: item.description,
